@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701425862
+::res://::1701426558
 Banana.gd::GDScript::-1::1700786019::0::1::::<>Node2D<>::
 Cherry.gd::GDScript::-1::1700816712::0::1::::<>Node2D<>::
 export_presets.cfg::TextFile::-1::1700786401::0::1::::<><>::
 Frog.gd::GDScript::-1::1701393269::0::1::::<>CharacterBody2D<>::
 icon.svg::CompressedTexture2D::7642039736390053222::1700143294::1700143451::1::::<><>::
-::res://assets/::1700805311
-::res://assets/bg/::1700739795
+::res://assets/::1701426233
+::res://assets/bg/::1701426233
 Blue.png::CompressedTexture2D::5601153810905919827::1566197378::1700739795::1::::<><>::
 Brown.png::CompressedTexture2D::7144163335488150965::1566197296::1700739795::1::::<><>::
 Gray.png::CompressedTexture2D::1893767065799209266::1564907996::1700739795::1::::<><>::
@@ -14,20 +14,20 @@ Green.png::CompressedTexture2D::1061574517718665166::1566197352::1700739795::1::
 Pink.png::CompressedTexture2D::6858698916201795727::1566197366::1700739795::1::::<><>::
 Purple.png::CompressedTexture2D::6592329384922695438::1566197336::1700739795::1::::<><>::
 Yellow.png::CompressedTexture2D::3134454800063937013::1566198354::1700739795::1::::<><>::
-::res://assets/entities/::1700739733
-::res://assets/entities/enemy/::1700739795
+::res://assets/entities/::1701426233
+::res://assets/entities/enemy/::1701426233
 Fall (32x32).png::CompressedTexture2D::8080227359639693574::1565186420::1700739795::1::::<><>::
 Hit (32x32).png::CompressedTexture2D::907597537322275395::1566477656::1700739795::1::::<><>::
 Idle (32x32).png::CompressedTexture2D::1152902630824683555::1566452222::1700739795::1::::<><>::
 Jump (32x32).png::CompressedTexture2D::7681636624310508283::1565186398::1700739795::1::::<><>::
 Run (32x32).png::CompressedTexture2D::7362994795944227201::1566452230::1700739795::1::::<><>::
-::res://assets/entities/player/::1700739795
+::res://assets/entities/player/::1701426233
 Fall (32x32).png::CompressedTexture2D::5472545529606972095::1565186490::1700739795::1::::<><>::
 Hit (32x32).png::CompressedTexture2D::8866009089718961047::1566477702::1700739795::1::::<><>::
 Idle (32x32).png::CompressedTexture2D::4156107664617048359::1566452262::1700739795::1::::<><>::
 Jump (32x32).png::CompressedTexture2D::5562135598808701339::1565186480::1700739795::1::::<><>::
 Run (32x32).png::CompressedTexture2D::2092099597987441398::1566452278::1700739795::1::::<><>::
-::res://assets/items/::1700784358
+::res://assets/items/::1701426233
 Apple.png::CompressedTexture2D::4852742469484934200::1566452510::1700784358::1::::<><>::
 Bananas.png::CompressedTexture2D::68130497470396591::1566452556::1700784358::1::::<><>::
 Cherries.png::CompressedTexture2D::6464247153150425985::1566452546::1700784358::1::::<><>::
@@ -37,11 +37,11 @@ Melon.png::CompressedTexture2D::1693555574969542908::1566452566::1700784358::1::
 Orange.png::CompressedTexture2D::3289758860448855370::1566452538::1700784358::1::::<><>::
 Pineapple.png::CompressedTexture2D::1102955067805321847::1566452574::1700784358::1::::<><>::
 Strawberry.png::CompressedTexture2D::1931963598286102085::1566452520::1700784358::1::::<><>::
-::res://assets/platform/::1700739795
+::res://assets/platform/::1701426233
 Terrain (16x16).png::CompressedTexture2D::5802419151197181335::1569812092::1700739795::1::::<><>::
-::res://assets/traps/::1700805313
+::res://assets/traps/::1701426233
 On (38x38).png::CompressedTexture2D::1887895972134612750::1569501868::1700805313::1::::<><>::
-::res://scenes/::1701409283
+::res://scenes/::1701426233
 banana.tscn::PackedScene::8992865130852826366::1701409283::0::1::::<><>::res://Banana.gd<>uid://8adm3o0mg4n::::res://assets/items/Bananas.png<>uid://nv1tv84am4ao::::res://assets/items/Collected.png
 cherry.tscn::PackedScene::7552756997987331793::1701409283::0::1::::<><>::res://Cherry.gd<>uid://cydlhalp21qqb::::res://assets/items/Cherries.png<>uid://nv1tv84am4ao::::res://assets/items/Collected.png
 Count.gd::GDScript::-1::1700817307::0::1::::<>Label<>::
@@ -63,5 +63,5 @@ saw.gd::GDScript::-1::1701393347::0::1::::<>Area2D<>::
 saw.tscn::PackedScene::4354284564309363217::1701409283::0::1::::<><>::uid://15rmuxlrb7vm::::res://assets/traps/On (38x38).png<>res://scenes/saw.gd
 world.gd::GDScript::-1::1701383340::0::1::::<>Node2D<>::
 world.tscn::PackedScene::7502601838615733667::1701409282::0::1::::<><>::uid://bo8eici7yv7yq::::res://scenes/map.tscn<>res://scenes/world.gd<>uid://bdnuairr7tt2d::::res://scenes/player.tscn<>uid://dcw8mbpy28sw8::::res://scenes/frog.tscn<>res://scenes/Count.gd<>uid://dfuu2l0vlcwcv::::res://scenes/cherry.tscn<>uid://dwmhcnwosim6j::::res://scenes/pause_menu.tscn
-::res://scripts/::1701395772
+::res://scripts/::1701426233
 menu_operations.gd::GDScript::-1::1701395772::0::1::::Menu_Operations<>Node<>::
