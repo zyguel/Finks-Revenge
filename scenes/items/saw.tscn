@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://b3biov1rjuktt"]
+[gd_scene load_steps=13 format=3 uid="uid://b3biov1rjuktt"]
 
-[ext_resource type="Script" path="res://scripts/saw.gd" id="1_3rks7"]
+[ext_resource type="Script" path="res://scenes/items/saw.gd" id="1_bdgeg"]
 [ext_resource type="Texture2D" uid="uid://15rmuxlrb7vm" path="res://assets/traps/On (38x38).png" id="2_kp23d"]
-[ext_resource type="AudioStream" uid="uid://jte6m2aggdu8" path="res://audio/sawblade.mp3" id="3_itall"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aqe8k"]
 atlas = ExtResource("2_kp23d")
@@ -70,12 +69,9 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_osqgx"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_jreqs"]
-radius = 98.5155
-
 [node name="Saw" type="Area2D"]
 monitoring = false
-script = ExtResource("1_3rks7")
+script = ExtResource("1_bdgeg")
 
 [node name="SawSprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -86,17 +82,3 @@ frame_progress = 0.791712
 [node name="Area2D" type="CollisionShape2D" parent="."]
 scale = Vector2(4, 4)
 shape = SubResource("CircleShape2D_osqgx")
-
-[node name="areaisze" type="Area2D" parent="."]
-monitorable = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="areaisze"]
-scale = Vector2(4, 4)
-shape = SubResource("CircleShape2D_jreqs")
-
-[node name="saw" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_itall")
-volume_db = -15.0
-
-[connection signal="body_entered" from="areaisze" to="." method="_on_areaisze_body_entered"]
-[connection signal="body_exited" from="areaisze" to="." method="_on_areaisze_body_exited"]

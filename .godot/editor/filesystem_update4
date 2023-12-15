@@ -5,3 +5,4 @@ res://scenes/frog.tscn
 res://scenes/items/saw.tscn
 res://scenes/items/cherry.tscn
 res://scenes/globaltheme.tscn
+res://scenes/items/saw.gd
