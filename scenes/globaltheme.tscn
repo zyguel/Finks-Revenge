@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxps4bgmckypr"]
+
+[ext_resource type="AudioStream" uid="uid://c7jbfi7c1l7tq" path="res://audio/menu/theme.mp3" id="1_d44mg"]
+
+[node name="theme" type="AudioStreamPlayer"]
+stream = ExtResource("1_d44mg")
+volume_db = -30.0
+autoplay = true

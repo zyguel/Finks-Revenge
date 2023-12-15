@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dx5tpntikv7dv"]
+
+[node name="HitboxComposition" type="Area2D"]

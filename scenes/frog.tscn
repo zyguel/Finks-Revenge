@@ -1,9 +1,10 @@
-[gd_scene load_steps=38 format=3 uid="uid://dcw8mbpy28sw8"]
+[gd_scene load_steps=39 format=3 uid="uid://dcw8mbpy28sw8"]
 
-[ext_resource type="Script" path="res://Frog.gd" id="1_0fwhg"]
+[ext_resource type="Script" path="res://scripts/Frog.gd" id="1_vh5s1"]
 [ext_resource type="Texture2D" uid="uid://m6v87wlh1htb" path="res://assets/entities/enemy/Hit (32x32).png" id="2_lyo4i"]
 [ext_resource type="Texture2D" uid="uid://qoqexntmp6j4" path="res://assets/entities/enemy/Idle (32x32).png" id="3_sjq73"]
 [ext_resource type="Texture2D" uid="uid://dc5xpirrc8nu4" path="res://assets/entities/enemy/Run (32x32).png" id="4_5lpwf"]
+[ext_resource type="AudioStream" uid="uid://b36ddbl54xefu" path="res://audio/enemy_death.mp3" id="5_irwjw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gjgx7"]
 atlas = ExtResource("2_lyo4i")
@@ -144,6 +145,30 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3rly8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlt8")
 }],
 "loop": false,
 "name": &"hit",
@@ -238,29 +263,30 @@ size = Vector2(24, 3)
 size = Vector2(26, 12)
 
 [node name="Frog" type="CharacterBody2D" groups=["Enemy"]]
-script = ExtResource("1_0fwhg")
+script = ExtResource("1_vh5s1")
+SPEED = 150.0
+JUMP_VELOCITY = -600.0
 
-[node name="frogSprite" type="AnimatedSprite2D" parent="."]
+[node name="sprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(0, -7)
 sprite_frames = SubResource("SpriteFrames_jrauc")
-animation = &"hit"
-frame = 6
-frame_progress = 1.0
+animation = &"idle"
 
-[node name="frogBody" type="CollisionShape2D" parent="."]
+[node name="body" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_p0mhr")
 
-[node name="frogHitbox" type="Area2D" parent="."]
+[node name="hitboxArea" type="Area2D" parent="."]
+monitorable = false
 
-[node name="Hitbox Area" type="CollisionShape2D" parent="frogHitbox"]
+[node name="hitbox" type="CollisionShape2D" parent="hitboxArea"]
 position = Vector2(0, -13)
 shape = SubResource("RectangleShape2D_3e8lb")
 
-[node name="frogAttack" type="Area2D" parent="."]
+[node name="attackArea" type="Area2D" parent="."]
 
-[node name="Attack area" type="CollisionShape2D" parent="frogAttack"]
+[node name="attack" type="CollisionShape2D" parent="attackArea"]
 position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_7bwlq")
 
@@ -272,5 +298,9 @@ target_position = Vector2(12, 0)
 position = Vector2(10, 2)
 target_position = Vector2(0, 11)
 
-[connection signal="body_entered" from="frogHitbox" to="." method="_on_frog_hitbox_body_entered"]
-[connection signal="body_entered" from="frogAttack" to="." method="_on_frog_attack_body_entered"]
+[node name="death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_irwjw")
+volume_db = -35.0
+
+[connection signal="body_entered" from="hitboxArea" to="." method="_on_frog_hitbox_body_entered"]
+[connection signal="body_entered" from="attackArea" to="." method="_on_frog_attack_body_entered"]

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://w72xhjnmut3g"]
+
+[node name="Finish" type="Node"]
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 484.0
+offset_top = 239.0
+offset_right = 687.0
+offset_bottom = 311.0
+theme_override_font_sizes/font_size = 50
+text = "FINISH!!!"
