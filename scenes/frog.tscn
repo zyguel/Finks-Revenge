@@ -300,7 +300,7 @@ target_position = Vector2(0, 11)
 
 [node name="death" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_irwjw")
-volume_db = -35.0
+volume_db = -10.0
 
 [connection signal="body_entered" from="hitboxArea" to="." method="_on_frog_hitbox_body_entered"]
 [connection signal="body_entered" from="attackArea" to="." method="_on_frog_attack_body_entered"]
