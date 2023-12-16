@@ -1,3 +1,4 @@
+Camera2D
 RichTextLabel
 Label
 Node
@@ -10,7 +11,6 @@ TextureRect
 ParallaxLayer
 ParallaxBackground
 CanvasLayer
-Camera2D
 Control
 VBoxContainer
 MarginContainer

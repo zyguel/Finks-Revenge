@@ -589,6 +589,10 @@ layer_0/tile_data = PackedInt32Array(983040, 393218, 0, 983041, 458754, 0, 98304
 position = Vector2(128, 437)
 scale = Vector2(2, 2)
 
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+limit_left = 0
+limit_bottom = 650
+
 [node name="Saw" parent="." instance=ExtResource("4_hpc4c")]
 position = Vector2(1633, 450)
 
