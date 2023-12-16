@@ -355,20 +355,15 @@ shape = SubResource("RectangleShape2D_g6722")
 position = Vector2(0, 1.75)
 shape = SubResource("RectangleShape2D_ehtnk")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-64, -218.5)
-scale = Vector2(0.5, 0.5)
-limit_left = 0
-limit_top = 0
-limit_right = 5000
-limit_bottom = 288
-position_smoothing_enabled = true
-
 [node name="playerdeath" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_mu0rq")
 volume_db = -10.0
 
 [node name="onscreen" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+limit_left = 0
+limit_bottom = 650
 
 [connection signal="area_entered" from="hitboxArea" to="." method="_on_hitbox_area_area_entered"]
 [connection signal="screen_exited" from="onscreen" to="." method="_on_onscreen_screen_exited"]
