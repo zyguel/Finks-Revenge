@@ -341,8 +341,9 @@ JUMP_VELOCITY = -900.0
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_nxqsq")
-animation = &"respawn"
-frame_progress = 0.499619
+animation = &"hit"
+frame = 6
+frame_progress = 1.0
 
 [node name="body" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)
@@ -367,4 +368,7 @@ position_smoothing_enabled = true
 stream = ExtResource("7_mu0rq")
 volume_db = -10.0
 
-[connection signal="area_entered" from="hitboxArea" to="." method="_on_play_hitbox_area_entered"]
+[node name="onscreen" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="area_entered" from="hitboxArea" to="." method="_on_hitbox_area_area_entered"]
+[connection signal="screen_exited" from="onscreen" to="." method="_on_onscreen_screen_exited"]

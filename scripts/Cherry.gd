@@ -11,7 +11,10 @@ func _ready():
 
 func _on_area_body_body_entered(body):
 	if body is Player:
+		Global.addhealth()
+		
 		sprite.play("collected")
 		collected.play()
+		
 		await sprite.animation_finished
 		queue_free()

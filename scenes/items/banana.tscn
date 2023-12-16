@@ -1,19 +1,24 @@
-[gd_scene load_steps=29 format=3 uid="uid://d1ehf7dtdquoc"]
+[gd_scene load_steps=30 format=3 uid="uid://d1ehf7dtdquoc"]
 
 [ext_resource type="Texture2D" uid="uid://8adm3o0mg4n" path="res://assets/items/Bananas.png" id="1_u4amb"]
 [ext_resource type="Texture2D" uid="uid://nv1tv84am4ao" path="res://assets/items/Collected.png" id="2_22qp6"]
+[ext_resource type="AudioStream" uid="uid://0kvctmdhj5pl" path="res://audio/splat.mp3" id="3_1sclr"]
 
 [sub_resource type="GDScript" id="GDScript_357iq"]
 script/source = "extends Node2D
 
 @onready var sprite = $sprite
+@onready var audio = $AudioStreamPlayer
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	sprite.play(\"banana\")
 
 func _on_banana_body_body_entered(body):
 	if body.name == \"Player\":
+		Global.addpoints()
+		audio.play()
 		sprite.play(\"collected\")
+		
 		await sprite.animation_finished
 		self.queue_free()
 "
@@ -268,5 +273,9 @@ animation = &"banana"
 [node name="Banana" type="CollisionShape2D" parent="BananaBody"]
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_mqcdt")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_1sclr")
+volume_db = -10.0
 
 [connection signal="body_entered" from="BananaBody" to="." method="_on_banana_body_body_entered"]

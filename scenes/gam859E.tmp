@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://de5k0ydivv21l"]
+
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_kvl2c"]
+[ext_resource type="PackedScene" uid="uid://bo8eici7yv7yq" path="res://scenes/map.tscn" id="2_u1s3r"]
+[ext_resource type="FontFile" uid="uid://csocm37ewd54a" path="res://assets/BebasNeue-Regular.otf" id="3_o1b8x"]
+[ext_resource type="Script" path="res://scripts/ui/healthlabel.gd" id="4_aowgh"]
+[ext_resource type="Script" path="res://scripts/coinlabel.gd" id="5_di8ej"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ayy3g"]
+bg_color = Color(0.862745, 0.309804, 0.301961, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jg2ur"]
+bg_color = Color(0.992157, 0.854902, 0.0509804, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_kvl2c")
+
+[node name="SpawnPoint" type="Node2D" parent="."]
+position = Vector2(129, 466)
+
+[node name="Map" parent="." instance=ExtResource("2_u1s3r")]
+metadata/_edit_lock_ = true
+
+[node name="Health" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Health"]
+offset_left = 24.0
+offset_top = 28.0
+offset_right = 201.0
+offset_bottom = 81.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ayy3g")
+
+[node name="healthlabel" type="Label" parent="Health/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -22.5
+offset_right = 50.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_o1b8x")
+theme_override_font_sizes/font_size = 34
+text = "Health: 3"
+script = ExtResource("4_aowgh")
+
+[node name="Coin" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Coin"]
+offset_left = 25.0
+offset_top = 89.0
+offset_right = 202.0
+offset_bottom = 142.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jg2ur")
+metadata/_edit_use_anchors_ = true
+
+[node name="pointslabel" type="Label" parent="Coin/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.5
+offset_top = -22.5
+offset_right = 49.5
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_o1b8x")
+theme_override_font_sizes/font_size = 34
+text = "Points: 0"
+script = ExtResource("5_di8ej")

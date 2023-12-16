@@ -37,12 +37,13 @@ func _physics_process(delta):
 # Functions that checks if the player has entered the area of the player
 func _on_frog_hitbox_body_entered(body):
 	if body is Player:
+		Global.addpoints()
 		death_ani()
 
 # Rework needed
 func _on_frog_attack_body_entered(body):
 	if body is Player:
-
+		Global.damage()
 		death_ani()
 
 func death_ani():

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://b3biov1rjuktt"]
 
-[ext_resource type="Script" path="res://scenes/items/saw.gd" id="1_bdgeg"]
+[ext_resource type="Script" path="res://scripts/saw.gd" id="1_3rks7"]
 [ext_resource type="Texture2D" uid="uid://15rmuxlrb7vm" path="res://assets/traps/On (38x38).png" id="2_kp23d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aqe8k"]
@@ -71,7 +71,7 @@ animations = [{
 
 [node name="Saw" type="Area2D"]
 monitoring = false
-script = ExtResource("1_bdgeg")
+script = ExtResource("1_3rks7")
 
 [node name="SawSprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

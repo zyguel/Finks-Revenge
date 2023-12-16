@@ -1,33 +1,123 @@
-[gd_scene load_steps=2 format=3 uid="uid://nqlqbdhimamn"]
+[gd_scene load_steps=6 format=3 uid="uid://nqlqbdhimamn"]
 
 [ext_resource type="Script" path="res://scripts/death_screen.gd" id="1_i0nxf"]
+[ext_resource type="AudioStream" uid="uid://c0aqg07iey38s" path="res://audio/lose.mp3" id="2_kv1hb"]
+[ext_resource type="FontFile" uid="uid://csocm37ewd54a" path="res://assets/BebasNeue-Regular.otf" id="2_vrrt0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v0h2a"]
+bg_color = Color(0.439216, 0.576471, 0.964706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 1
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u44mi"]
+bg_color = Color(0.882353, 0.164706, 0.0745098, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 1
+shadow_offset = Vector2(2, 2)
 
 [node name="Death_Screen" type="Node"]
 script = ExtResource("1_i0nxf")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 450.0
-offset_top = 109.0
-offset_right = 700.0
-offset_bottom = 181.0
-theme_override_font_sizes/font_size = 50
-text = "YOU DIED!"
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1161.0
+offset_bottom = 655.0
+color = Color(0, 0, 0, 1)
 
-[node name="Try again" type="Button" parent="."]
-offset_left = 487.0
-offset_top = 255.0
-offset_right = 652.0
-offset_bottom = 305.0
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.331
+anchor_right = 0.5
+anchor_bottom = 0.331
+offset_left = -291.0
+offset_top = -80.488
+offset_right = 291.0
+offset_bottom = 162.512
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_vrrt0")
+theme_override_font_sizes/font_size = 200
+text = "YOU DIED!"
+horizontal_alignment = 1
+
+[node name="restartpanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = 26.0
+offset_right = 132.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v0h2a")
+
+[node name="Try again" type="Button" parent="restartpanel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 262.0
+offset_bottom = 53.0
+theme_override_fonts/font = ExtResource("2_vrrt0")
 theme_override_font_sizes/font_size = 30
 text = "TRY AGAIN"
+flat = true
 
-[node name="Quit" type="Button" parent="."]
-offset_left = 545.0
-offset_top = 350.0
-offset_right = 616.0
-offset_bottom = 400.0
+[node name="quitpanel" type="Panel" parent="."]
+anchors_preset = -1
+anchor_left = 0.384924
+anchor_top = 0.568
+anchor_right = 0.611736
+anchor_bottom = 0.643889
+offset_left = 0.567963
+offset_top = 64.936
+offset_right = 0.279968
+offset_bottom = 64.7599
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u44mi")
+
+[node name="Quit" type="Button" parent="quitpanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.5
+offset_top = -24.5
+offset_right = 129.5
+offset_bottom = 25.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_vrrt0")
 theme_override_font_sizes/font_size = 30
 text = "Quit"
+flat = true
 
-[connection signal="pressed" from="Try again" to="." method="_on_try_again_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[node name="sad" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_kv1hb")
+
+[connection signal="pressed" from="restartpanel/Try again" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="quitpanel/Quit" to="." method="_on_quit_pressed"]
