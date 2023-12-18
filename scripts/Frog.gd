@@ -51,7 +51,7 @@ func death_ani():
 	velocity.y = JUMP_VELOCITY
 	
 	set_collision_mask_value(1, false)
-	set_collision_layer_value(1, false)
+	set_collision_layer_value(2, false)
 	$hitboxArea.queue_free()
 	$attackArea.queue_free()
 	$body.queue_free()

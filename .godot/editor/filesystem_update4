@@ -8,3 +8,5 @@ res://scenes/globaltheme.tscn
 res://scenes/screen/pause_menu.tscn
 res://scripts/game.gd
 res://scenes/game.tscn
+res://scripts/Frog.gd
+res://scripts/player.gd

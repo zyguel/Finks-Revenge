@@ -331,7 +331,7 @@ animations = [{
 size = Vector2(20, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehtnk"]
-size = Vector2(24, 23.5)
+size = Vector2(20, 23.5)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_mask = 3
@@ -342,9 +342,7 @@ JUMP_VELOCITY = -900.0
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_nxqsq")
-animation = &"hit"
-frame = 6
-frame_progress = 1.0
+animation = &"idle"
 
 [node name="body" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)

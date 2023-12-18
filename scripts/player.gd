@@ -59,6 +59,7 @@ func _on_hitbox_area_area_entered(area):
 		#GAME LOGIC
 		player_input = false
 		set_collision_mask_value(1, false)
+		set_collision_mask_value(2, false)
 		set_collision_layer_value(1, false)
 		hitbox.set_collision_mask_value(1, false)
 		body.disabled = true
