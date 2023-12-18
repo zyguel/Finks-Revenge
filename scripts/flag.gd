@@ -3,8 +3,7 @@ extends Node2D
 class_name Checkpoint
 
 @onready var sprite = $flag
-
-@onready var activated = false
+var activated = false
 
 func _ready():
 	sprite.play("idle")

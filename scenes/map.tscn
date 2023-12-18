@@ -573,6 +573,7 @@ motion_mirroring = Vector2(1151, 0)
 
 [node name="bg" type="TextureRect" parent="bg loop/bgbg"]
 texture_filter = 1
+offset_top = -1458.0
 offset_right = 4608.0
 offset_bottom = 652.0
 texture = ExtResource("1_l4m4s")

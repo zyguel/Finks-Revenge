@@ -5,7 +5,6 @@ class_name Game
 @onready var player = $Map/Player
 @onready var spawn = $SpawnPoint
 @onready var checkpoint = $Map/Checkpoint
-
 @onready var transition = $transition
 
 

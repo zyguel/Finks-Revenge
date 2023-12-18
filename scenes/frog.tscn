@@ -263,6 +263,7 @@ size = Vector2(24, 3)
 size = Vector2(26, 12)
 
 [node name="Frog" type="CharacterBody2D" groups=["Enemy"]]
+collision_layer = 2
 script = ExtResource("1_vh5s1")
 SPEED = 150.0
 JUMP_VELOCITY = -600.0

@@ -334,6 +334,7 @@ size = Vector2(20, 25)
 size = Vector2(24, 23.5)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
+collision_mask = 3
 script = ExtResource("1_dlntg")
 SPEED = 400.0
 JUMP_VELOCITY = -900.0

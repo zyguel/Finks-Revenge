@@ -1,7 +1,10 @@
 res://scenes/map.tscn
+res://scripts/flag.gd
 res://scenes/player.tscn
 res://scenes/frog.tscn
 res://scenes/items/cherry.tscn
 res://scenes/items/saw.tscn
 res://scenes/globaltheme.tscn
 res://scenes/screen/pause_menu.tscn
+res://scripts/game.gd
+res://scenes/game.tscn
