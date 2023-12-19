@@ -5,13 +5,6 @@ res://scenes/items/cherry.tscn
 res://scenes/items/saw.tscn
 res://scenes/globaltheme.tscn
 res://scenes/screen/pause_menu.tscn
-res://addons/godot_icon/IconReplacer.tscn
 res://scenes/game.tscn
-<<<<<<< Updated upstream
-res://scripts/Frog.gd
-res://scripts/player.gd
-res://scripts/game.gd
 res://scenes/screen/main_menu.tscn
 res://scenes/screen/death_screen.tscn
-=======
->>>>>>> Stashed changes
