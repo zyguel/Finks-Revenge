@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://de5k0ydivv21l"]
+[gd_scene load_steps=10 format=3 uid="uid://de5k0ydivv21l"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_kvl2c"]
 [ext_resource type="PackedScene" uid="uid://bo8eici7yv7yq" path="res://scenes/map.tscn" id="2_u1s3r"]
 [ext_resource type="FontFile" uid="uid://csocm37ewd54a" path="res://assets/BebasNeue-Regular.otf" id="3_o1b8x"]
 [ext_resource type="Script" path="res://scripts/ui/healthlabel.gd" id="4_aowgh"]
 [ext_resource type="Script" path="res://scripts/ui/coinlabel.gd" id="5_xfnbw"]
+[ext_resource type="Texture2D" uid="uid://dpoia55cedvcq" path="res://assets/menu/mute.svg" id="6_4i224"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ayy3g"]
 bg_color = Color(0.862745, 0.309804, 0.301961, 1)
@@ -24,6 +25,16 @@ border_width_right = 3
 border_width_bottom = 3
 border_color = Color(0, 0, 0, 1)
 shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ff2mj"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+shadow_size = 2
 shadow_offset = Vector2(1, 1)
 
 [node name="Game" type="Node2D"]
@@ -91,3 +102,36 @@ theme_override_fonts/font = ExtResource("3_o1b8x")
 theme_override_font_sizes/font_size = 34
 text = "Points: 0"
 script = ExtResource("5_xfnbw")
+
+[node name="Mute" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Mute"]
+offset_left = 1067.0
+offset_top = 29.0
+offset_right = 1125.0
+offset_bottom = 87.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ff2mj")
+
+[node name="Button" type="Button" parent="Mute/Panel"]
+layout_mode = 0
+offset_right = 57.0
+offset_bottom = 57.0
+text = "."
+
+[node name="TextureRect" type="TextureRect" parent="Mute/Panel/Button"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.5
+offset_top = -19.5
+offset_right = 20.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_4i224")
+
+[connection signal="pressed" from="Mute/Panel/Button" to="." method="_on_button_pressed"]

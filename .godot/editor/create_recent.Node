@@ -1,6 +1,8 @@
+Button
 TextureRect
-AnimatedSprite2D
+Panel
 CanvasLayer
+AnimatedSprite2D
 VideoStreamPlayer
 Camera2D
 RichTextLabel
@@ -8,7 +10,6 @@ Label
 Node
 CollisionShape2D
 Area2D
-Button
 TextureButton
 TileMap
 ParallaxLayer
@@ -21,4 +22,3 @@ Timer
 RayCast2D
 Sprite2D
 CharacterBody2D
-Panel
