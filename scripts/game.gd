@@ -21,9 +21,9 @@ func _process(_delta):
 func _on_button_pressed():
 	if mute:
 		Globaltheme.stream_paused = false
-		textmute.texture = load("res://assets/menu/mute.svg")
+		textmute.texture = load("res://assets/menu/unmute.svg")
 	else:
 		Globaltheme.stream_paused = true
-		textmute.texture = load("res://assets/menu/unmute.svg")
+		textmute.texture = load("res://assets/menu/mute.svg")
 	
 	mute = !mute

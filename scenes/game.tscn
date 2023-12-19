@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://csocm37ewd54a" path="res://assets/BebasNeue-Regular.otf" id="3_o1b8x"]
 [ext_resource type="Script" path="res://scripts/ui/healthlabel.gd" id="4_aowgh"]
 [ext_resource type="Script" path="res://scripts/ui/coinlabel.gd" id="5_xfnbw"]
-[ext_resource type="Texture2D" uid="uid://dpoia55cedvcq" path="res://assets/menu/mute.svg" id="6_4i224"]
+[ext_resource type="Texture2D" uid="uid://inot0d7y811" path="res://assets/menu/unmute.svg" id="6_tw3qg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ayy3g"]
 bg_color = Color(0.862745, 0.309804, 0.301961, 1)
@@ -132,6 +132,6 @@ offset_right = 20.5
 offset_bottom = 20.5
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_4i224")
+texture = ExtResource("6_tw3qg")
 
 [connection signal="pressed" from="Mute/Panel/Button" to="." method="_on_button_pressed"]
