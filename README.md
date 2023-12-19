@@ -3,6 +3,8 @@
 
 A Mario-like game with OOP concepts implemented most notably Composition and Inheritance
 
+## Code
+Most codes are found within script folder
 
 ## Installation
 
