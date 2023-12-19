@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1702957539
 export_presets.cfg::TextFile::-1::1700786401::0::1::::<><>::
 icon.svg::CompressedTexture2D::7642039736390053222::1700143294::1702907737::1::::<><>::
@@ -96,3 +97,113 @@ coinlabel.gd::GDScript::-1::1702714846::0::1::::<>Label<>::
 healthlabel.gd::GDScript::-1::1702715048::0::1::::<>Label<>::
 scorelabel.gd::GDScript::-1::1702726076::0::1::::<>Label<>::
 victory_screen.gd::GDScript::-1::1702725866::0::1::::VictoryScreen<>Node<>::
+=======
+::res://::1702960853
+export_presets.cfg::TextFile::-1::1702960073::0::1::::<><>::
+icon.svg::CompressedTexture2D::7642039736390053222::1702957417::1702957428::1::::<><>::
+README.md::TextFile::-1::1702729318::0::1::::<><>::
+::res://addons/::1702960634
+::res://addons/godot_icon/::1702960727
+CreateIcon.gd::GDScript::-1::1702960634::0::1::::CreateIcon<>SceneTree<>::
+GodotIconPlugin.gd::GDScript::-1::1702960634::0::1::::<>EditorPlugin<>::
+IconCreator.gd::GDScript::-1::1702960634::0::1::::<>ConfirmationDialog<>::
+IconCreator.tscn::PackedScene::6022893750037439598::1702960634::0::1::::<><>::res://addons/godot_icon/IconCreator.gd
+IconReplacer.gd::GDScript::-1::1702960634::0::1::::<>ConfirmationDialog<>::
+IconReplacer.tscn::PackedScene::4954727098840103535::1702960727::0::1::::<><>::res://addons/godot_icon/IconReplacer.gd
+LICENSE.md::TextFile::-1::1702960634::0::1::::<><>::
+plugin.cfg::TextFile::-1::1702960635::0::1::::<><>::
+ReplaceIcon.gd::GDScript::-1::1702960635::0::1::::ReplaceIcon<>SceneTree<>::
+::res://assets/::1702729581
+BebasNeue-Regular.otf::FontFile::6065286225238853578::1702729318::1702729581::1::::<><>::
+::res://assets/bg/::1702906858
+Blue.png::CompressedTexture2D::5601153810905919827::1702729318::1702729318::1::::<><>::
+Brown.png::CompressedTexture2D::7144163335488150965::1702729318::1702729318::1::::<><>::
+Gray.png::CompressedTexture2D::1893767065799209266::1702729318::1702729318::1::::<><>::
+Green.png::CompressedTexture2D::1061574517718665166::1702729318::1702729318::1::::<><>::
+Pink.png::CompressedTexture2D::6858698916201795727::1702729318::1702729318::1::::<><>::
+Purple.png::CompressedTexture2D::6592329384922695438::1702729318::1702729318::1::::<><>::
+Yellow.png::CompressedTexture2D::3134454800063937013::1702729318::1702729318::1::::<><>::
+::res://assets/entities/::1702729318
+::res://assets/entities/enemy/::1702729318
+Fall (32x32).png::CompressedTexture2D::8080227359639693574::1702729318::1702729318::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::907597537322275395::1702729318::1702729318::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::1152902630824683555::1702729318::1702729318::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::7681636624310508283::1702729318::1702729318::1::::<><>::
+Run (32x32).png::CompressedTexture2D::7362994795944227201::1702729318::1702729318::1::::<><>::
+::res://assets/entities/player/::1702729581
+Fall (32x32).png::CompressedTexture2D::5472545529606972095::1702729318::1702729318::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::8866009089718961047::1702729318::1702729318::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::4156107664617048359::1702729318::1702729318::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::5562135598808701339::1702729318::1702729318::1::::<><>::
+Photo.png::CompressedTexture2D::439179781409113484::1702729318::1702729581::1::::<><>::
+Run (32x32).png::CompressedTexture2D::2092099597987441398::1702729318::1702729318::1::::<><>::
+::res://assets/items/::1702729318
+Apple.png::CompressedTexture2D::4852742469484934200::1702729318::1702729318::1::::<><>::
+Bananas.png::CompressedTexture2D::68130497470396591::1702729318::1702729318::1::::<><>::
+Cherries.png::CompressedTexture2D::6464247153150425985::1702729318::1702729318::1::::<><>::
+Collected.png::CompressedTexture2D::957420627312828610::1702729318::1702729318::1::::<><>::
+Kiwi.png::CompressedTexture2D::8211159976730182622::1702729318::1702729318::1::::<><>::
+Melon.png::CompressedTexture2D::1693555574969542908::1702729318::1702729318::1::::<><>::
+Orange.png::CompressedTexture2D::3289758860448855370::1702729318::1702729318::1::::<><>::
+Pineapple.png::CompressedTexture2D::1102955067805321847::1702729318::1702729318::1::::<><>::
+Strawberry.png::CompressedTexture2D::1931963598286102085::1702729318::1702729318::1::::<><>::
+::res://assets/menu/::1702955690
+mute.svg::CompressedTexture2D::8241483352289752768::1702955681::1702955690::1::::<><>::
+unmute.svg::CompressedTexture2D::17330380796925298::1702955681::1702955690::1::::<><>::
+::res://assets/menu/buttons/::1702729318
+Menu Buttons sprite (BnW).png::CompressedTexture2D::3795796690044934667::1702729318::1702729318::1::::<><>::
+Menu Buttons sprite (Colored).png::CompressedTexture2D::7186721349871145353::1702729318::1702729318::1::::<><>::
+::res://assets/platform/::1702729318
+Checkpoint (Flag Idle)(64x64).png::CompressedTexture2D::7478109196064744616::1702729318::1702729318::1::::<><>::
+Checkpoint (Flag Out) (64x64).png::CompressedTexture2D::5280658602697867411::1702729318::1702729318::1::::<><>::
+Checkpoint (No Flag).png::CompressedTexture2D::9067016025514751718::1702729318::1702729318::1::::<><>::
+Menu Buttons sprite (BnW).png::CompressedTexture2D::4835250736505420467::1702729318::1702729318::1::::<><>::
+Terrain (16x16).png::CompressedTexture2D::5802419151197181335::1702729318::1702729318::1::::<><>::
+::res://assets/traps/::1702729318
+On (38x38).png::CompressedTexture2D::1887895972134612750::1702729318::1702729318::1::::<><>::
+::res://audio/::1702729581
+collected.mp3::AudioStreamMP3::5627482257480870591::1702729318::1702729318::1::::<><>::
+enemy_death.mp3::AudioStreamMP3::4415891595212798934::1702729318::1702729318::1::::<><>::
+lose.mp3::AudioStreamMP3::6528546007872004964::1702729318::1702729581::1::::<><>::
+playerdeath.mp3::AudioStreamMP3::7487904287000063036::1702729318::1702729318::1::::<><>::
+sawblade.mp3::AudioStreamMP3::671221669649723813::1702729318::1702729318::1::::<><>::
+splat.mp3::AudioStreamMP3::1776644513554668185::1702729318::1702729581::1::::<><>::
+winner.mp3::AudioStreamMP3::6194918335723886045::1702729318::1702729581::1::::<><>::
+::res://audio/menu/::1702729318
+hover.mp3::AudioStreamMP3::6661654744777259652::1702729318::1702729318::1::::<><>::
+pressed.mp3::AudioStreamMP3::282828147118368715::1702729318::1702729318::1::::<><>::
+theme.mp3::AudioStreamMP3::7037533879298695374::1702729318::1702729318::1::::<><>::
+::res://scenes/::1702960726
+frog.tscn::PackedScene::7347081216056101325::1702960726::0::1::::<><>::res://scripts/Frog.gd<>uid://m6v87wlh1htb::::res://assets/entities/enemy/Hit (32x32).png<>uid://qoqexntmp6j4::::res://assets/entities/enemy/Idle (32x32).png<>uid://dc5xpirrc8nu4::::res://assets/entities/enemy/Run (32x32).png<>uid://b36ddbl54xefu::::res://audio/enemy_death.mp3
+game.tscn::PackedScene::7502601838615733667::1702960726::0::1::::<><>::res://scripts/game.gd<>uid://bo8eici7yv7yq::::res://scenes/map.tscn<>uid://csocm37ewd54a::::res://assets/BebasNeue-Regular.otf<>res://scripts/ui/healthlabel.gd<>res://scripts/ui/coinlabel.gd<>uid://inot0d7y811::::res://assets/menu/unmute.svg
+globaltheme.tscn::PackedScene::6419295193605377631::1702960726::0::1::::<><>::uid://c7jbfi7c1l7tq::::res://audio/menu/theme.mp3
+map.tscn::PackedScene::3437446233723836520::1702960725::0::1::::<><>::uid://bkwmaotr28302::::res://assets/bg/Yellow.png<>uid://cowy84ab57ood::::res://assets/platform/Terrain (16x16).png<>uid://b3biov1rjuktt::::res://scenes/items/saw.tscn<>uid://bdnuairr7tt2d::::res://scenes/player.tscn<>uid://cfxdv461kg38o::::res://scenes/items/flag.tscn<>uid://dcw8mbpy28sw8::::res://scenes/frog.tscn<>uid://dfuu2l0vlcwcv::::res://scenes/items/cherry.tscn<>uid://d1ehf7dtdquoc::::res://scenes/items/banana.tscn
+player.tscn::PackedScene::2625038912529715421::1702960725::0::1::::<><>::res://scripts/player.gd<>uid://cj77a4jk85k2b::::res://assets/entities/player/Fall (32x32).png<>uid://dyk04y1e2s1wd::::res://assets/entities/player/Hit (32x32).png<>uid://b0hiqr3t1pwkd::::res://assets/entities/player/Idle (32x32).png<>uid://cliltce0d6im2::::res://assets/entities/player/Jump (32x32).png<>uid://42otsm1canog::::res://assets/entities/player/Run (32x32).png<>uid://dexgxpgpgfq5y::::res://audio/playerdeath.mp3
+::res://scenes/items/::1702960726
+banana.tscn::PackedScene::8992865130852826366::1702733768::0::1::::<><>::uid://8adm3o0mg4n
+cherry.tscn::PackedScene::7552756997987331793::1702960726::0::1::::<><>::res://scripts/Cherry.gd<>uid://cydlhalp21qqb::::res://assets/items/Cherries.png<>uid://nv1tv84am4ao::::res://assets/items/Collected.png<>uid://cmf82tbvvpbtn::::res://audio/collected.mp3
+flag.tscn::PackedScene::5171487498831085872::1702729318::0::1::::<><>::res://scripts/flag.gd<>uid://chh8w8cvtdc6f
+saw.tscn::PackedScene::4354284564309363217::1702960726::0::1::::<><>::res://scripts/saw.gd<>uid://15rmuxlrb7vm::::res://assets/traps/On (38x38).png
+::res://scenes/screen/::1702960726
+death_screen.tscn::PackedScene::946181528469260965::1702729318::0::1::::<><>::res://scripts/death_screen.gd<>uid://c0aqg07iey38s
+main_menu.tscn::PackedScene::2537746075257641493::1702729318::0::1::::<><>::res://scripts/main_menu.gd<>uid://bkwmaotr28302
+pause_menu.tscn::PackedScene::3075976884002948052::1702960726::0::1::::<><>::
+victory_screen.tscn::PackedScene::1611895462405328714::1702729318::0::1::::<><>::uid://cui4nujxnx3yv
+::res://scripts/::1702955981
+Cherry.gd::GDScript::-1::1702729318::0::1::::Cherry<>Node2D<>::
+death_screen.gd::GDScript::-1::1702729318::0::1::::<>Node<>::
+flag.gd::GDScript::-1::1702903492::0::1::::Checkpoint<>Node2D<>::
+Frog.gd::GDScript::-1::1702955681::0::1::::Enemy<>Entity<>::
+game.gd::GDScript::-1::1702955681::0::1::::Game<>Node2D<>::
+main_menu.gd::GDScript::-1::1702729318::0::1::::<>Node<>::
+player.gd::GDScript::-1::1702903492::0::1::::Player<>Entity<>::
+saw.gd::GDScript::-1::1702955981::0::1::::Saw<>Area2D<>::
+::res://scripts/core/::1702955681
+entity.gd::GDScript::-1::1702729318::0::1::::Entity<>CharacterBody2D<>::
+global_script.gd::GDScript::-1::1702955681::0::1::::<>Node<>::
+::res://scripts/ui/::1702955686
+coinlabel.gd::GDScript::-1::1702955686::0::1::::<>Label<>::
+healthlabel.gd::GDScript::-1::1702955686::0::1::::<>Label<>::
+scorelabel.gd::GDScript::-1::1702729318::0::1::::<>Label<>::
+victory_screen.gd::GDScript::-1::1702729318::0::1::::VictoryScreen<>Node<>::
+>>>>>>> Stashed changes
