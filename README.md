@@ -25,10 +25,7 @@ How to [clone project](https://www.youtube.com/watch?v=PoZNIbs_wx8) via GitHub D
 
 
 ## Developers of Fink's Revenge
-Ralph Miguel Mandigma - Lead Developer
-
-Zyguel Philip Cabogoy - Game Level Designer
-
-Jeremiah Lopez Juinio - Developer
-
-Jaden Ceniza - Develeper
+Ralph Miguel Mandigma - Lead Developer  
+Zyguel Philip Cabogoy - Game Level Designer  
+Jeremiah Lopez Juinio - Developer  
+Jaden Ceniza - Develeper  
