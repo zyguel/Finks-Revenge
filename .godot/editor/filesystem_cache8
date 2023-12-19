@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702952163
+::res://::1702957539
 export_presets.cfg::TextFile::-1::1700786401::0::1::::<><>::
 icon.svg::CompressedTexture2D::7642039736390053222::1700143294::1702907737::1::::<><>::
 README.md::TextFile::-1::1702736657::0::1::::<><>::
@@ -37,7 +37,7 @@ Melon.png::CompressedTexture2D::1693555574969542908::1566452566::1700784358::1::
 Orange.png::CompressedTexture2D::3289758860448855370::1566452538::1700784358::1::::<><>::
 Pineapple.png::CompressedTexture2D::1102955067805321847::1566452574::1700784358::1::::<><>::
 Strawberry.png::CompressedTexture2D::1931963598286102085::1566452520::1700784358::1::::<><>::
-::res://assets/menu/::1702954108
+::res://assets/menu/::1702954110
 mute.svg::CompressedTexture2D::8241483352289752768::1702954070::1702954110::1::::<><>::
 unmute.svg::CompressedTexture2D::17330380796925298::1702954070::1702954110::1::::<><>::
 ::res://assets/menu/buttons/::1702726250
@@ -63,28 +63,28 @@ winner.mp3::AudioStreamMP3::6194918335723886045::1702717547::1702726288::1::::<>
 hover.mp3::AudioStreamMP3::6661654744777259652::1632768686::1702651659::1::::<><>::
 pressed.mp3::AudioStreamMP3::282828147118368715::1632768687::1702651659::1::::<><>::
 theme.mp3::AudioStreamMP3::7037533879298695374::1702652227::1702652396::1::::<><>::
-::res://scenes/::1702953798
-frog.tscn::PackedScene::7347081216056101325::1702953798::0::1::::<><>::res://scripts/Frog.gd<>uid://m6v87wlh1htb::::res://assets/entities/enemy/Hit (32x32).png<>uid://qoqexntmp6j4::::res://assets/entities/enemy/Idle (32x32).png<>uid://dc5xpirrc8nu4::::res://assets/entities/enemy/Run (32x32).png<>uid://b36ddbl54xefu::::res://audio/enemy_death.mp3
-game.tscn::PackedScene::7502601838615733667::1702953798::0::1::::<><>::res://scripts/game.gd<>uid://bo8eici7yv7yq::::res://scenes/map.tscn<>uid://csocm37ewd54a::::res://assets/BebasNeue-Regular.otf<>res://scripts/ui/healthlabel.gd<>res://scripts/ui/coinlabel.gd
-globaltheme.tscn::PackedScene::6419295193605377631::1702953798::0::1::::<><>::uid://c7jbfi7c1l7tq::::res://audio/menu/theme.mp3
-map.tscn::PackedScene::3437446233723836520::1702953798::0::1::::<><>::uid://bkwmaotr28302::::res://assets/bg/Yellow.png<>uid://cowy84ab57ood::::res://assets/platform/Terrain (16x16).png<>uid://b3biov1rjuktt::::res://scenes/items/saw.tscn<>uid://bdnuairr7tt2d::::res://scenes/player.tscn<>uid://cfxdv461kg38o::::res://scenes/items/flag.tscn<>uid://dcw8mbpy28sw8::::res://scenes/frog.tscn<>uid://dfuu2l0vlcwcv::::res://scenes/items/cherry.tscn<>uid://d1ehf7dtdquoc::::res://scenes/items/banana.tscn
-player.tscn::PackedScene::2625038912529715421::1702953798::0::1::::<><>::res://scripts/player.gd<>uid://cj77a4jk85k2b::::res://assets/entities/player/Fall (32x32).png<>uid://dyk04y1e2s1wd::::res://assets/entities/player/Hit (32x32).png<>uid://b0hiqr3t1pwkd::::res://assets/entities/player/Idle (32x32).png<>uid://cliltce0d6im2::::res://assets/entities/player/Jump (32x32).png<>uid://42otsm1canog::::res://assets/entities/player/Run (32x32).png<>uid://dexgxpgpgfq5y::::res://audio/playerdeath.mp3
-::res://scenes/items/::1702953798
+::res://scenes/::1702955003
+frog.tscn::PackedScene::7347081216056101325::1702955003::0::1::::<><>::res://scripts/Frog.gd<>uid://m6v87wlh1htb::::res://assets/entities/enemy/Hit (32x32).png<>uid://qoqexntmp6j4::::res://assets/entities/enemy/Idle (32x32).png<>uid://dc5xpirrc8nu4::::res://assets/entities/enemy/Run (32x32).png<>uid://b36ddbl54xefu::::res://audio/enemy_death.mp3
+game.tscn::PackedScene::7502601838615733667::1702955003::0::1::::<><>::res://scripts/game.gd<>uid://bo8eici7yv7yq::::res://scenes/map.tscn<>uid://csocm37ewd54a::::res://assets/BebasNeue-Regular.otf<>res://scripts/ui/healthlabel.gd<>res://scripts/ui/coinlabel.gd<>uid://inot0d7y811::::res://assets/menu/unmute.svg
+globaltheme.tscn::PackedScene::6419295193605377631::1702955003::0::1::::<><>::uid://c7jbfi7c1l7tq::::res://audio/menu/theme.mp3
+map.tscn::PackedScene::3437446233723836520::1702955003::0::1::::<><>::uid://bkwmaotr28302::::res://assets/bg/Yellow.png<>uid://cowy84ab57ood::::res://assets/platform/Terrain (16x16).png<>uid://b3biov1rjuktt::::res://scenes/items/saw.tscn<>uid://bdnuairr7tt2d::::res://scenes/player.tscn<>uid://cfxdv461kg38o::::res://scenes/items/flag.tscn<>uid://dcw8mbpy28sw8::::res://scenes/frog.tscn<>uid://dfuu2l0vlcwcv::::res://scenes/items/cherry.tscn<>uid://d1ehf7dtdquoc::::res://scenes/items/banana.tscn
+player.tscn::PackedScene::2625038912529715421::1702955003::0::1::::<><>::res://scripts/player.gd<>uid://cj77a4jk85k2b::::res://assets/entities/player/Fall (32x32).png<>uid://dyk04y1e2s1wd::::res://assets/entities/player/Hit (32x32).png<>uid://b0hiqr3t1pwkd::::res://assets/entities/player/Idle (32x32).png<>uid://cliltce0d6im2::::res://assets/entities/player/Jump (32x32).png<>uid://42otsm1canog::::res://assets/entities/player/Run (32x32).png<>uid://dexgxpgpgfq5y::::res://audio/playerdeath.mp3
+::res://scenes/items/::1702955003
 banana.tscn::PackedScene::8992865130852826366::1702715599::0::1::::<><>::uid://8adm3o0mg4n
-cherry.tscn::PackedScene::7552756997987331793::1702953798::0::1::::<><>::res://scripts/Cherry.gd<>uid://cydlhalp21qqb::::res://assets/items/Cherries.png<>uid://nv1tv84am4ao::::res://assets/items/Collected.png<>uid://cmf82tbvvpbtn::::res://audio/collected.mp3
+cherry.tscn::PackedScene::7552756997987331793::1702955003::0::1::::<><>::res://scripts/Cherry.gd<>uid://cydlhalp21qqb::::res://assets/items/Cherries.png<>uid://nv1tv84am4ao::::res://assets/items/Collected.png<>uid://cmf82tbvvpbtn::::res://audio/collected.mp3
 flag.tscn::PackedScene::5171487498831085872::1702726125::0::1::::<><>::res://scripts/flag.gd<>uid://chh8w8cvtdc6f
-saw.tscn::PackedScene::4354284564309363217::1702953798::0::1::::<><>::res://scripts/saw.gd<>uid://15rmuxlrb7vm::::res://assets/traps/On (38x38).png
-::res://scenes/screen/::1702953798
+saw.tscn::PackedScene::4354284564309363217::1702955003::0::1::::<><>::res://scripts/saw.gd<>uid://15rmuxlrb7vm::::res://assets/traps/On (38x38).png
+::res://scenes/screen/::1702955003
 death_screen.tscn::PackedScene::946181528469260965::1702726126::0::1::::<><>::res://scripts/death_screen.gd<>uid://c0aqg07iey38s
 main_menu.tscn::PackedScene::2537746075257641493::1702721101::0::1::::<><>::res://scripts/main_menu.gd<>uid://bkwmaotr28302
-pause_menu.tscn::PackedScene::3075976884002948052::1702953798::0::1::::<><>::
+pause_menu.tscn::PackedScene::3075976884002948052::1702955003::0::1::::<><>::
 victory_screen.tscn::PackedScene::1611895462405328714::1702726126::0::1::::<><>::uid://cui4nujxnx3yv
-::res://scripts/::1702953556
+::res://scripts/::1702954939
 Cherry.gd::GDScript::-1::1702706758::0::1::::Cherry<>Node2D<>::
 death_screen.gd::GDScript::-1::1702725853::0::1::::<>Node<>::
 flag.gd::GDScript::-1::1702883751::0::1::::Checkpoint<>Node2D<>::
 Frog.gd::GDScript::-1::1702953556::0::1::::Enemy<>Entity<>::
-game.gd::GDScript::-1::1702883477::0::1::::Game<>Node2D<>::
+game.gd::GDScript::-1::1702954939::0::1::::Game<>Node2D<>::
 main_menu.gd::GDScript::-1::1702723732::0::1::::<>Node<>::
 player.gd::GDScript::-1::1702892136::0::1::::Player<>Entity<>::
 saw.gd::GDScript::-1::1702678975::0::1::::Saw<>Area2D<>::

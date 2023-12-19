@@ -7,6 +7,7 @@ class_name Game
 @onready var checkpoint = $Map/Checkpoint
 @onready var transition = $transition
 @onready var textmute = $Mute/Panel/Button/TextureRect
+@onready var button = $Button
 var mute = false
 
 func _ready():
@@ -25,5 +26,5 @@ func _on_button_pressed():
 	else:
 		Globaltheme.stream_paused = true
 		textmute.texture = load("res://assets/menu/mute.svg")
-	
+
 	mute = !mute

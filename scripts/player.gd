@@ -56,20 +56,7 @@ func update_animation():
 
 func _on_hitbox_area_area_entered(area):
 	if area is Saw:
-		#GAME LOGIC
-		player_input = false
-		set_collision_mask_value(1, false)
-		set_collision_mask_value(2, false)
-		set_collision_layer_value(1, false)
-		hitbox.set_collision_mask_value(1, false)
-		body.disabled = true
-		velocity.y = JUMP_VELOCITY
-		
-		#Animation
-		sprite.play("hit")
-		death.play()
-		await sprite.animation
-
+		die()
 
 func _on_onscreen_screen_exited():
 	if playerscreen.is_on_screen() == false:
@@ -84,3 +71,18 @@ func _on_onscreen_screen_exited():
 		
 		sprite.play("respawn")
 		await sprite.animation_finished
+
+func die():
+	#GAME LOGIC
+	player_input = false
+	set_collision_mask_value(1, false)
+	set_collision_mask_value(2, false)
+	set_collision_layer_value(1, false)
+	hitbox.set_collision_mask_value(1, false)
+	body.disabled = true
+	velocity.y = JUMP_VELOCITY
+	
+	#Animation
+	sprite.play("hit")
+	death.play()
+	await sprite.animation

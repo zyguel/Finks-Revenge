@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://de5k0ydivv21l"]
+[gd_scene load_steps=11 format=3 uid="uid://de5k0ydivv21l"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_kvl2c"]
 [ext_resource type="PackedScene" uid="uid://bo8eici7yv7yq" path="res://scenes/map.tscn" id="2_u1s3r"]
@@ -36,6 +36,8 @@ border_width_bottom = 2
 border_color = Color(0, 0, 0, 1)
 shadow_size = 2
 shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i4r8i"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_kvl2c")
@@ -116,7 +118,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ff2mj")
 layout_mode = 0
 offset_right = 57.0
 offset_bottom = 57.0
-text = "."
+focus_mode = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i4r8i")
+toggle_mode = true
+flat = true
 
 [node name="TextureRect" type="TextureRect" parent="Mute/Panel/Button"]
 texture_filter = 1

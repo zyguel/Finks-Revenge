@@ -43,7 +43,7 @@ func _on_frog_hitbox_body_entered(body):
 func _on_frog_attack_body_entered(body):
 	if body is Player:
 		body.velocity.y = JUMP_VELOCITY
-		Global.damage()
+		body.die()
 		death_ani()
 
 func death_ani():
