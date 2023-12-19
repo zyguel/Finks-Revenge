@@ -1,6 +1,9 @@
-res://assets/bg
+C:/Github/Game
+res://
+C:/Godot_v4.1.3-stable_win64.exe
 res://scenes
+res://assets/entities/player
+res://assets/bg
 res://assets/traps
 res://assets/items
 res://assets/entities/enemy
-res://assets/entities/player
