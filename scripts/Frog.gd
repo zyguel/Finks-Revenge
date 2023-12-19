@@ -36,7 +36,6 @@ func _physics_process(delta):
 # Functions that checks if the player has entered the area of the player
 func _on_frog_hitbox_body_entered(body):
 	if body is Player:
-		body.velocity.y = JUMP_VELOCITY
 		Global.addpoints()
 		death_ani()
 
