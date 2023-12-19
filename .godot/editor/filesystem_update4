@@ -10,3 +10,4 @@ res://scripts/Frog.gd
 res://scripts/player.gd
 res://scripts/game.gd
 res://scenes/screen/main_menu.tscn
+res://scenes/screen/death_screen.tscn
