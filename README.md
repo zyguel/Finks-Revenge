@@ -6,6 +6,9 @@ A Mario-like game with OOP concepts implemented most notably Composition and Inh
 
 ## Installation
 
+Easy install:
+Setup.exe [Windowsx32-64](https://drive.google.com/drive/folders/1VR1zvfVZClGBnlYU9RHEuHm15ZT4Bcf9)
+
 Download [GitHub Desktop](https://desktop.github.com/)
 
 How to [clone project](https://www.youtube.com/watch?v=PoZNIbs_wx8) via GitHub Desktop
