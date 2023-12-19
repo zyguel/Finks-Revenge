@@ -9,7 +9,7 @@ const MAX_HEALTH = 3
 var spawnpoint := Vector2(0,0)
 var points = 0
 var health = 3
-
+			
 func damage():
 	if(health > 1):
 		health -= 1

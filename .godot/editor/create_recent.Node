@@ -1,3 +1,6 @@
+TextureRect
+AnimatedSprite2D
+CanvasLayer
 VideoStreamPlayer
 Camera2D
 RichTextLabel
@@ -8,15 +11,12 @@ Area2D
 Button
 TextureButton
 TileMap
-TextureRect
 ParallaxLayer
 ParallaxBackground
-CanvasLayer
 Control
 VBoxContainer
 MarginContainer
 Node2D
-AnimatedSprite2D
 Timer
 RayCast2D
 Sprite2D

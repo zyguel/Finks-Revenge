@@ -6,8 +6,7 @@ class_name Enemy
 @onready var facing = $frogDirection
 @onready var onFloor = $frogFloor
 @onready var death = $death
-var is_facing_right = true;
-
+var is_facing_right = true
 
 func _ready():
 	sprite.play("run")
@@ -43,6 +42,7 @@ func _on_frog_hitbox_body_entered(body):
 # Rework needed
 func _on_frog_attack_body_entered(body):
 	if body is Player:
+		body.velocity.y = JUMP_VELOCITY
 		Global.damage()
 		death_ani()
 
