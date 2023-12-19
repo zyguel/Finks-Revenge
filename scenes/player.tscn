@@ -328,10 +328,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g6722"]
-size = Vector2(20, 26)
+size = Vector2(20, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehtnk"]
-size = Vector2(22, 23.5)
+size = Vector2(20, 23.5)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_mask = 3
@@ -345,7 +345,7 @@ sprite_frames = SubResource("SpriteFrames_nxqsq")
 animation = &"idle"
 
 [node name="body" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
+position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_g6722")
 
 [node name="hitboxArea" type="Area2D" parent="."]
@@ -359,14 +359,10 @@ stream = ExtResource("7_mu0rq")
 volume_db = -10.0
 
 [node name="onscreen" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(0.5, 0)
-scale = Vector2(1.05, 1)
 
 [node name="Camera2D2" type="Camera2D" parent="."]
 limit_left = 0
 limit_bottom = 650
-drag_horizontal_enabled = true
-drag_horizontal_offset = -0.32
 
 [connection signal="area_entered" from="hitboxArea" to="." method="_on_hitbox_area_area_entered"]
 [connection signal="screen_exited" from="onscreen" to="." method="_on_onscreen_screen_exited"]

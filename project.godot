@@ -10,9 +10,11 @@ config_version=5
 
 [application]
 
-config/name="mario's revenge"
+config/name="Fin's Revenge"
 run/main_scene="res://scenes/screen/main_menu.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
+config/icon="res://icon.svg"
+config/windows_native_icon="res://iconAll.ico"
 
 [autoload]
 
